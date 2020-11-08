@@ -15,6 +15,7 @@ func main() {
 	oFlag := flag.String("o", "", "Output file")
 	oOutputStyle := flag.String("output-style", "nested", "One of: nested, expanded, compact or compressed")
 	oMinify := flag.Bool("m", false, "Shorthand for -output-style=compressed and takes precedence")
+	// FIXME: should allow multiple
 	oInclude := flag.String("I", "", "Specify directory to use for resolving @import")
 	// TODO: include path, option to disable timestamp check, minimize option (by default look for .min.css file ext)
 	// TODO: take a look through here - https://godoc.org/github.com/wellington/go-libsass - some interesting stuff like SourceMap etc
